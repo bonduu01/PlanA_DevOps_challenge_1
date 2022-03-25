@@ -1,0 +1,123 @@
+2022-03-12 07:08:43.305  WARN 27132 --- [HikariPool-19 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Thread starvation or clock leap detected (housekeeper delta=7h3m33s404ms431µs700ns).
+2022-03-12 07:49:53.887  INFO 39740 --- [main] c.d.S.t.c.DepartmentControllerTest       : Starting DepartmentControllerTest using Java 1.8.0 on ETZ-ABEL-TECH with PID 39740 (started by abel.agbachi in C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main)
+2022-03-12 07:49:53.888  INFO 39740 --- [main] c.d.S.t.c.DepartmentControllerTest       : The following profiles are active: qa
+2022-03-12 07:49:53.925  WARN 39740 --- [main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 60:13]
+2022-03-12 07:49:53.925  WARN 39740 --- [main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 28:13]
+2022-03-12 07:49:53.925  WARN 39740 --- [main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 11:13]
+2022-03-12 07:49:57.053  INFO 39740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-12 07:49:57.548  INFO 39740 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-03-12 07:49:57.548  INFO 39740 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-03-12 07:49:57.551  INFO 39740 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-03-12 07:49:57.606  INFO 39740 --- [main] c.d.S.t.c.DepartmentControllerTest       : Started DepartmentControllerTest in 4.612 seconds (JVM running for 6.98)
+2022-03-12 07:49:57.684  INFO 39740 --- [main] c.d.S.t.controller.DepartmentController  : Inside saveDepartment of DepartmentController
+2022-03-12 07:49:57.745  INFO 39740 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-12 07:52:13.488  INFO 19352 --- [main] c.d.S.t.c.DepartmentControllerTest       : Starting DepartmentControllerTest using Java 1.8.0 on ETZ-ABEL-TECH with PID 19352 (started by abel.agbachi in C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main)
+2022-03-12 07:52:13.490  INFO 19352 --- [main] c.d.S.t.c.DepartmentControllerTest       : The following profiles are active: qa
+2022-03-12 07:52:13.526  WARN 19352 --- [main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 60:13]
+2022-03-12 07:52:13.527  WARN 19352 --- [main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 28:13]
+2022-03-12 07:52:13.527  WARN 19352 --- [main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 11:13]
+2022-03-12 07:52:16.428  INFO 19352 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-12 07:52:16.922  INFO 19352 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-03-12 07:52:16.922  INFO 19352 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-03-12 07:52:16.924  INFO 19352 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2022-03-12 07:52:16.969  INFO 19352 --- [main] c.d.S.t.c.DepartmentControllerTest       : Started DepartmentControllerTest in 4.312 seconds (JVM running for 6.371)
+2022-03-12 07:52:17.041  INFO 19352 --- [main] c.d.S.t.controller.DepartmentController  : Inside saveDepartment of DepartmentController
+2022-03-12 07:52:17.076  INFO 19352 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-12 09:59:06.846  WARN 27132 --- [HikariPool-19 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Thread starvation or clock leap detected (housekeeper delta=1h26m52s203ms920µs800ns).
+2022-03-12 10:27:12.637  INFO 27132 --- [Thread-92] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-12 10:27:12.651  INFO 27132 --- [Thread-92] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-12 10:27:12.689  INFO 27132 --- [Thread-92] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2022-03-12 10:27:12.710  INFO 27132 --- [Thread-92] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2022-03-12 10:27:13.756  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : Starting SpringBootTutorialApplication using Java 1.8.0 on ETZ-ABEL-TECH with PID 27132 (C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main\target\classes started by abel.agbachi in C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main)
+2022-03-12 10:27:13.757  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : The following profiles are active: qa
+2022-03-12 10:27:13.762  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 60:13]
+2022-03-12 10:27:13.763  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 28:13]
+2022-03-12 10:27:13.764  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 11:13]
+2022-03-12 10:27:14.376  INFO 27132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-12 10:27:14.399  INFO 27132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2022-03-12 10:27:14.661  INFO 27132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-03-12 10:27:14.663  INFO 27132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-12 10:27:14.663  INFO 27132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-03-12 10:27:14.691  INFO 27132 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-03-12 10:27:14.691  INFO 27132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 927 ms
+2022-03-12 10:27:14.742  INFO 27132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2022-03-12 10:27:14.742  WARN 27132 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-03-12 10:27:14.768  INFO 27132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2022-03-12 10:27:14.768  INFO 27132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dcbapp-qa'
+2022-03-12 10:27:14.831  INFO 27132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-12 10:27:14.841  INFO 27132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-12 10:27:14.914  INFO 27132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-12 10:27:14.916  INFO 27132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-12 10:27:14.922  INFO 27132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-12 10:27:15.057  WARN 27132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-12 10:27:15.119  INFO 27132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-12 10:27:15.344  INFO 27132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-03-12 10:27:15.375  INFO 27132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-03-12 10:27:15.387  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : Started SpringBootTutorialApplication in 1.706 seconds (JVM running for 163158.867)
+2022-03-12 10:27:15.389  INFO 27132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-12 10:29:54.974  INFO 27132 --- [Thread-97] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-12 10:29:54.976  INFO 27132 --- [Thread-97] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-12 10:29:54.977  INFO 27132 --- [Thread-97] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2022-03-12 10:29:54.985  INFO 27132 --- [Thread-97] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2022-03-12 10:29:55.215  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : Starting SpringBootTutorialApplication using Java 1.8.0 on ETZ-ABEL-TECH with PID 27132 (C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main\target\classes started by abel.agbachi in C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main)
+2022-03-12 10:29:55.216  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : The following profiles are active: qa
+2022-03-12 10:29:55.219  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 60:13]
+2022-03-12 10:29:55.219  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 28:13]
+2022-03-12 10:29:55.220  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 11:13]
+2022-03-12 10:29:55.684  INFO 27132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-12 10:29:55.705  INFO 27132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-03-12 10:29:55.924  INFO 27132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-03-12 10:29:55.926  INFO 27132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-12 10:29:55.926  INFO 27132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-03-12 10:29:55.966  INFO 27132 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-03-12 10:29:55.967  INFO 27132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
+2022-03-12 10:29:56.055  INFO 27132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2022-03-12 10:29:56.056  WARN 27132 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-03-12 10:29:56.077  INFO 27132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2022-03-12 10:29:56.077  INFO 27132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dcbapp-qa'
+2022-03-12 10:29:56.134  INFO 27132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-12 10:29:56.140  INFO 27132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-12 10:29:56.183  INFO 27132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-12 10:29:56.184  INFO 27132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-12 10:29:56.189  INFO 27132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-12 10:29:56.378  WARN 27132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-12 10:29:56.430  INFO 27132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-12 10:29:56.604  INFO 27132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-03-12 10:29:56.628  INFO 27132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-03-12 10:29:56.643  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : Started SpringBootTutorialApplication in 1.478 seconds (JVM running for 163320.124)
+2022-03-12 10:29:56.647  INFO 27132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-12 10:29:58.690  INFO 27132 --- [Thread-102] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-12 10:29:58.692  INFO 27132 --- [Thread-102] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-12 10:29:58.694  INFO 27132 --- [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2022-03-12 10:29:58.704  INFO 27132 --- [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2022-03-12 10:29:59.021  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : Starting SpringBootTutorialApplication using Java 1.8.0 on ETZ-ABEL-TECH with PID 27132 (C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main\target\classes started by abel.agbachi in C:\Users\abel.agbachi\Desktop\Programming Videos\DailyCodeBuffer\Springboot-Tutorial-main)
+2022-03-12 10:29:59.022  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : The following profiles are active: qa
+2022-03-12 10:29:59.028  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 60:13]
+2022-03-12 10:29:59.028  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 28:13]
+2022-03-12 10:29:59.029  WARN 27132 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 11:13]
+2022-03-12 10:29:59.601  INFO 27132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-12 10:29:59.626  INFO 27132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2022-03-12 10:29:59.783  INFO 27132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-03-12 10:29:59.784  INFO 27132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-12 10:29:59.785  INFO 27132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-03-12 10:29:59.815  INFO 27132 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-03-12 10:29:59.816  INFO 27132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 786 ms
+2022-03-12 10:29:59.870  INFO 27132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2022-03-12 10:29:59.871  WARN 27132 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-03-12 10:29:59.889  INFO 27132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2022-03-12 10:29:59.889  INFO 27132 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/dcbapp-qa'
+2022-03-12 10:29:59.932  INFO 27132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-12 10:29:59.938  INFO 27132 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-12 10:29:59.982  INFO 27132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-12 10:29:59.983  INFO 27132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-12 10:29:59.987  INFO 27132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-12 10:30:00.102  WARN 27132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-12 10:30:00.170  INFO 27132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-12 10:30:00.311  INFO 27132 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-03-12 10:30:00.329  INFO 27132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-03-12 10:30:00.339  INFO 27132 --- [restartedMain] c.d.S.t.SpringBootTutorialApplication    : Started SpringBootTutorialApplication in 1.372 seconds (JVM running for 163323.82)
+2022-03-12 10:30:00.342  INFO 27132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-03-12 10:54:09.421  INFO 27132 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-12 10:54:09.422  INFO 27132 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-12 10:54:09.424  INFO 27132 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-12 17:05:19.153  WARN 27132 --- [HikariPool-22 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Thread starvation or clock leap detected (housekeeper delta=3h18m26s393ms84µs700ns).
