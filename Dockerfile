@@ -11,6 +11,6 @@ FROM openjdk:8-jre-alpine
 MAINTAINER Peter Molokwu bonduu01@gmail.com
 ARG DEPENDENCY=target/dependency
 WORKDIR /app
-COPY --from=MAVEN_BUILD /build/target/Spring-boot-Peter-1.0.0.jar /app/Spring-bo                       ot-Peter-1.0.0.jar
+COPY --from=MAVEN_BUILD /build/target/Spring-boot-Peter-1.0.0.jar /app/Spring-boot-Peter-1.0.0.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "Spring-boot-Peter-1.0.0.jar"]
