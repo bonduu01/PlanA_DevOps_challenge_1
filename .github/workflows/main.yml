@@ -9,10 +9,18 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+
+env:
+  IMAGE_TAG: ${{ github.sha }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_REGISTRY: ${{ secrets.AWS_REPOSITORY_URL }}
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  REPO_NAME: plan-a
+  
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -38,5 +46,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          echo building project into container
           docker build . --file Dockerfile --tag $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
           echo test, and deploy your project.
