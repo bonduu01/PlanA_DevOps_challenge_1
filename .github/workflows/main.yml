@@ -50,6 +50,6 @@ jobs:
       - name: Push Image to AWS ECR
         run: |
           echo Pushing to AWS repository
-          docker push $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
+          sudo aws ecr get-login-password --region $AWS_REGION | sudo docker login --username AWS --password-stdin $AWS_REGISTRY && docker push $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
           echo "::set-output name=image::$AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG"
         
