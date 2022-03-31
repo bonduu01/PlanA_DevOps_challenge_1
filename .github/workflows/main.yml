@@ -2,12 +2,6 @@
 
 name: plan-a-app
 
-env:
-  AWS_REGION: ${{ env.AWS_REGION }}                  
-  ECR_REPOSITORY: ${{ secrets.AWS_REPOSITORY }}          
-  ECS_SERVICE: plan-a-service                 
-  ECS_CLUSTER: sabi-sa                 
-  ECS_TASK_DEFINITION: plan-a-task 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
