@@ -31,20 +31,23 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-#       # Runs a single command using the runners shell
-#       - name: Build into container
-#         run: aws ecr get-login-password --region $AWS_REGION | sudo docker login --username AWS --password-stdin $AWS_REGISTRY
-
       # Runs a set of commands using the runners shell
+      - name: Configure AWS credentials
+        uses: aws-actions/PlanA_DevOps_challenge_1@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
       - name: Build Image
         run: |
           echo building project into container
           docker build . --file Dockerfile --tag $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
+          
       - name: Push Image to AWS ECR
         run: |
           echo Pushing to AWS repository
           sudo aws ecr get-login-password --region $AWS_REGION | sudo docker login --username AWS --password-stdin $AWS_REGISTRY 
           docker push $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
-          echo Push Successful
+          echo "::set-output name=image::$AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG"
         
