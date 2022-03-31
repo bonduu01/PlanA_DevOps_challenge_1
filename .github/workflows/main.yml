@@ -34,19 +34,17 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build into container
-        env:
-          IMAGE_TAG: ${{ github.sha }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGISTRY: ${{ secrets.AWS_REPOSITORY_URL }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          REPO_NAME: plan-a
         run: aws ecr get-login-password --region $AWS_REGION | sudo docker login --username AWS --password-stdin $AWS_REGISTRY
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          echo Login into container
+          aws ecr get-login-password --region $AWS_REGION | sudo docker login --username AWS --password-stdin $AWS_REGISTRY
+          echo Login Successful
           echo building project into container
           docker build . --file Dockerfile --tag $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
+          echo Build Successful
           echo Pushing to AWS repository
           docker push $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
+          echo Push Successful
