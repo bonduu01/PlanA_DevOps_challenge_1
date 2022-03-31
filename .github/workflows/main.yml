@@ -48,4 +48,5 @@ jobs:
         run: |
           echo building project into container
           docker build . --file Dockerfile --tag $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
-          echo test, and deploy your project.
+          echo Pushing to AWS repository
+          docker push $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
