@@ -51,11 +51,13 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
           
-      - name: Push Image to AWS ECR
-        run: |
-          echo Pushing to AWS repository
-          docker build . --file Dockerfile --tag 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
-          docker push 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
+      - name: Build & Push image
+        uses: docker/build-push-action@v2-build-push
+        with:
+          registry: ${{ steps.login-ecr.outputs.registry }}
+          repository: ${{ steps.login-ecr.outputs.registry }}/plan-a:$IMAGE_TAG
+          add_git_labels: true
+          tag_with_ref: true
 
 
         
