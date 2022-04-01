@@ -33,7 +33,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       # Runs a set of commands using the runners shell
-
+      - name: Install sudo package
+        run: apt update && apt install sudo
+      - name: Installing packages
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install jq curl -y
+          curl "<https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip>" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
 
       - name: Build Image
         run: |
