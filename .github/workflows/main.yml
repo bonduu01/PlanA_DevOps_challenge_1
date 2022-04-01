@@ -51,7 +51,7 @@ jobs:
         run: |
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
           unzip awscliv2.zip
-          sudo ./aws/install
+          sudo ./aws/install --update
           echo Pushing to AWS repository
           sudo aws ecr get-login-password --region eu-central-1 | sudo docker login --username AWS --password-stdin 653532977316.dkr.ecr.eu-central-1.amazonaws.com
           sudo docker push 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
