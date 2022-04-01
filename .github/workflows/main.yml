@@ -38,7 +38,7 @@ jobs:
       - name: Build Image
         run: |
           echo building project into container
-          docker build . --file Dockerfile --tag $AWS_REGISTRY/$REPO_NAME:$IMAGE_TAG
+          docker build . --file Dockerfile --tag 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
           
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -54,7 +54,7 @@ jobs:
       - name: Push Image to AWS ECR
         run: |
           echo Pushing to AWS repository
-          aws --region eu-central-1 ecr get-login-password | docker login --username AWS --password-stdin 653532977316.dkr.ecr.eu-central-1.amazonaws.com && sudo docker push 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
+          docker push 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
 
 
         
