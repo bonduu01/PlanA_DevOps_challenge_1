@@ -50,9 +50,8 @@ jobs:
       - name: Push Image to AWS ECR
         run: |
           curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          apt update && apt upgrade
           echo Pushing to AWS repository
-          $(aws ecr get-login-password --no-include-email --region eu-central-1)
+          $(aws ecr get-login --no-include-email --region eu-central-1)
 
 
         
