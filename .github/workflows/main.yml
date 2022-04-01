@@ -35,10 +35,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Installing packages
         run: |
-          sudo apt-get install jq curl -y
           curl "<https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip>" -o "awscliv2.zip"
           unzip awscliv2.zip
-          sudo ./aws/install
+          sudo ./aws/install --updape
 
       - name: Build Image
         run: |
