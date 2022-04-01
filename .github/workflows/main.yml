@@ -54,6 +54,7 @@ jobs:
       - name: Push Image to AWS ECR
         run: |
           echo Pushing to AWS repository
+          docker build . --file Dockerfile --tag 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
           docker push 653532977316.dkr.ecr.eu-central-1.amazonaws.com/plan-a:$IMAGE_TAG
 
 
