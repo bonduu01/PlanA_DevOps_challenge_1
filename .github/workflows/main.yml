@@ -63,8 +63,13 @@ jobs:
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           echo $ECR_REGISTRY
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          
       - name: AWS Version
         run: aws --version
       - name: Define Task Defination
         run: |
           aws ecs register-task-definition --region eu-central-1 --family plan-a --container-definitions  '[{"portMappings": [{"hostPort": 8080, "containerPort": 8080,"protocol": "tcp"}],"volumesFrom": [],"mountPoints": [],"image": "'$ECR_REGISTRY'/'$ECR_REPOSITORY':'$IMAGE_TAG'","name": "plan-a","logConfiguration": {"options": {"awslogs-region": "eu-central-1","awslogs-stream-prefix": "ecs","awslogs-group": "/ecs/plan_a", "awslogs-create-group": "true"},"logDriver": "awslogs"},"environment": [{"name": "SPRING_PROFILES_ACTIVE", "value": "production"}],"essential": true}]' --requires-compatibilities "FARGATE" --network-mode "awsvpc" --execution-role-arn arn:aws:iam::653532977316:role/ecsTaskExecutionRole --cpu 1024 --memory 2048
+     
+      - name: Update ECS Service
+        run: |
+          aws ecs update-service --region eu-central-1 --cluster sabi-sa --service plan-a-service --desired-count 1 --task-definition plan-a --health-check-grace-period-seconds 60
