@@ -6,9 +6,9 @@ name: plan-a-app
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ staging ]
   pull_request:
-    branches: [ main ]
+    branches: [ staging ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -20,7 +20,7 @@ env:
   AWS_REGISTRY: ${{ secrets.AWS_REPOSITORY_URL }}
   AWS_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
   AWS_DEFAULT_OUTPUT: json
-  REPO_NAME: plan-a
+  REPO_NAME: plan-a-staging
   
 jobs:
   # This workflow contains a single job called "build"
@@ -58,7 +58,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: plan-a
+          ECR_REPOSITORY: plan-a-staging
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           echo $ECR_REGISTRY
@@ -68,8 +68,8 @@ jobs:
         run: aws --version
       - name: Define Task Defination
         run: |
-          aws ecs register-task-definition --region eu-central-1 --family plan-a --container-definitions  '[{"portMappings": [{"hostPort": 8080, "containerPort": 8080,"protocol": "tcp"}],"volumesFrom": [],"mountPoints": [],"image": "'$ECR_REGISTRY'/'$ECR_REPOSITORY':'$IMAGE_TAG'","name": "plan-a","logConfiguration": {"options": {"awslogs-region": "eu-central-1","awslogs-stream-prefix": "ecs","awslogs-group": "/ecs/plan_a", "awslogs-create-group": "true"},"logDriver": "awslogs"},"environment": [{"name": "SPRING_PROFILES_ACTIVE", "value": "production"}],"essential": true}]' --requires-compatibilities "FARGATE" --network-mode "awsvpc" --execution-role-arn arn:aws:iam::653532977316:role/ecsTaskExecutionRole --cpu 1024 --memory 2048
+          aws ecs register-task-definition --region eu-central-1 --family plan-a-staging --container-definitions  '[{"portMappings": [{"hostPort": 8080, "containerPort": 8080,"protocol": "tcp"}],"volumesFrom": [],"mountPoints": [],"image": "'$ECR_REGISTRY'/'$ECR_REPOSITORY':'$IMAGE_TAG'","name": "plan-a","logConfiguration": {"options": {"awslogs-region": "eu-central-1","awslogs-stream-prefix": "ecs","awslogs-group": "/ecs/plan_a", "awslogs-create-group": "true"},"logDriver": "awslogs"},"environment": [{"name": "SPRING_PROFILES_ACTIVE", "value": "production"}],"essential": true}]' --requires-compatibilities "FARGATE" --network-mode "awsvpc" --execution-role-arn arn:aws:iam::653532977316:role/ecsTaskExecutionRole --cpu 1024 --memory 2048
      
       - name: Update ECS Service
         run: |
-          aws ecs update-service --region eu-central-1 --cluster sabi-sa --service plan-a-service --desired-count 1 --task-definition plan-a --health-check-grace-period-seconds 60
+          aws ecs update-service --region eu-central-1 --cluster sabi-sa --service plan-a-staging-service --desired-count 1 --task-definition plan-a --health-check-grace-period-seconds 60
